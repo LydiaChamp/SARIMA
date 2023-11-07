@@ -4,6 +4,4 @@ source("code/04b_OutputCSV_deaths.R")
 
 Lydia_SARIMA <- rbind(Lydia_SARIMA_cases, Lydia_SARIMA_deaths)
 
-write.csv(Lydia_SARIMA, "./output/2023-10-30-Lydia-SARIMA.csv", row.names=FALSE)
-
-#Lydia_SARIMA <- Lydia_SARIMA[order(Lydia_SARIMA$location),]
+write.csv(Lydia_SARIMA, paste0("./data-processed/", Sys.Date(),"-Lydia-SARIMA.csv"), row.names=FALSE)

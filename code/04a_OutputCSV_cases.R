@@ -8,7 +8,7 @@ Lydia_SARIMA_cases <- data.frame(forecast_date = date(2880),
                                       quantile = numeric(2880),
                                       value = numeric(2880))
 
-Lydia_SARIMA_cases$forecast_date <- rep("2023-10-30", N_rows_per_country*N_countries)
+Lydia_SARIMA_cases$forecast_date <- rep(Sys.Date(), N_rows_per_country*N_countries)
 Lydia_SARIMA_cases$forecast_date <- as.Date(Lydia_SARIMA_cases$forecast_date)
 
 Lydia_SARIMA_cases$target <- rep(rep(c("1 wk ahead inc case", "2 wk ahead inc case", "3 wk ahead inc case", "4 wk ahead inc case"),
@@ -31,6 +31,3 @@ Lydia_SARIMA_cases$quantile <- rep(c(NA, 0.01, 0.025, seq(0.05, 0.95, by = 0.05)
 
 Lydia_SARIMA_cases$value <- ifelse(cases < 0, 0, cases)
 Lydia_SARIMA_cases$value <- round(Lydia_SARIMA_cases$value, 0)
-
-
-#write.csv(Lydia_SARIMA_cases, "./output/2023-10-16-Lydia-SARIMA_cases.csv", row.names=FALSE)
