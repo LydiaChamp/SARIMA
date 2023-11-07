@@ -1,0 +1,26 @@
+{
+    "id": "F582E592",
+    "path": "C:/Users/lchampezou/OneDrive - ECDC/Desktop/Modelling team/Forecast Hub/Lydia-SARIMA/code/04a_OutputCSV_cases.R",
+    "project_path": "code/04a_OutputCSV_cases.R",
+    "type": "r_source",
+    "hash": "3349512976",
+    "contents": "",
+    "dirty": false,
+    "created": 1699352687718.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "33,0",
+        "scrollLine": "16"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1699356669,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1699356669353,
+    "read_only": false,
+    "read_only_alternatives": []
+}
