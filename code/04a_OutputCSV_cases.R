@@ -8,7 +8,7 @@ Lydia_SARIMA_cases <- data.frame(forecast_date = date(2880),
                                       quantile = numeric(2880),
                                       value = numeric(2880))
 
-Lydia_SARIMA_cases$forecast_date <- rep(Sys.Date(), N_rows_per_country*N_countries)
+Lydia_SARIMA_cases$forecast_date <- rep(Sys.Date()-1, N_rows_per_country*N_countries)
 Lydia_SARIMA_cases$forecast_date <- as.Date(Lydia_SARIMA_cases$forecast_date)
 
 Lydia_SARIMA_cases$target <- rep(rep(c("1 wk ahead inc case", "2 wk ahead inc case", "3 wk ahead inc case", "4 wk ahead inc case"),
